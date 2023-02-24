@@ -1,7 +1,5 @@
-// Improvement: allow to exclude numbers
-
 import { randomInArray } from "./array";
-import { Exclude, ExcludeRange } from "./types";
+import { Exclude, ExcludeRange } from "../types";
 
 export const simpleRandomNumber = (min: number, max: number): number =>
   Math.floor(Math.random() * (max - min + 1) + min);
@@ -11,8 +9,8 @@ export const randomNumber = (
   secondLimit: number,
   exclude?: Exclude
 ): number => {
-  const min: number = firstLimit < secondLimit ? firstLimit : secondLimit;
-  const max: number = firstLimit >= secondLimit ? firstLimit : secondLimit;
+  const min = Math.min(firstLimit, secondLimit);
+  const max = Math.max(firstLimit, secondLimit);
 
   if (
     exclude === undefined ||

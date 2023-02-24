@@ -1,5 +1,5 @@
 import { randomNumber } from "./number";
-import { Exclude } from "./types";
+import { Exclude } from "../types";
 
 // Will return undefined with an empty array
 export const randomInArray = <T>(array: T[], exclude?: Exclude): T =>
