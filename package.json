@@ -8,7 +8,7 @@
     "dev": "ts-node index.ts"
   },
   "author": "jemleym",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.21.0",
     "@babel/preset-env": "^7.20.2",
