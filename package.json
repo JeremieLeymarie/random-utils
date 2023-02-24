@@ -1,0 +1,24 @@
+{
+  "name": "random-utils",
+  "version": "1.0.0",
+  "description": "A collection of utils to generate random data",
+  "main": "index.ts",
+  "scripts": {
+    "test": "jest",
+    "dev": "ts-node index.ts"
+  },
+  "author": "jemleym",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.21.0",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-typescript": "^7.21.0",
+    "@types/jest": "^29.4.0",
+    "@types/node": "^18.14.0",
+    "babel-jest": "^29.4.3",
+    "jest": "^29.4.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  },
+  "exports": "./index.ts"
+}
